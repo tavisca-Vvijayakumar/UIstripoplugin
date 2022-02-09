@@ -89,7 +89,7 @@
         console.log("Event data - " , event.data);
         userContextConfiguration.loadUserContext(event.data).then(res => {
             EMAILConfiguration.loadStripoConfiguration().then(respose => {
-                document.getElementById("teamplatename").value = usercontext.TemplateName;
+               // document.getElementById("teamplatename").value = usercontext.TemplateName;
                 EMAILInitialization.loadTemplate(EMAILInitialization.initPlugin);
             }).catch(err => {
                 console.log(err);
