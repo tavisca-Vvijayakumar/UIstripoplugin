@@ -6,41 +6,44 @@
     <title>Email Stripo Plugin App</title>
     <link href="./css/main.css" rel="stylesheet"></link>
     <link rel="stylesheet" href="external_preview_popup.css"></link>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
 </head>
 
 <body>
     <div class="row">
         <div id="messageBox" style="display: none;"></div>
-        <div id="externalSystemContainer" style="width: 100%;">
-            <div id="col-logo">
-            <img src="./img/imglogo.PNG" alt="logo" style="height:40px;width:40%">
-            </div>
-            <div id="col-1">
-            <button id="back" class="unstyled-button btn" data-toggle="tooltip" data-placement="bottom" title="Leave" style="border-radius: 50%;" onclick="window.close();"><img src="./img/iconleft.png" alt="back" style="height:40px;width:30px"></button>
-             </div>
-            
-             <div class="btn-group">
-               
-               <button><img src="./img/iconundo.PNG" alt="undo" style="height:30px;width:20px"></button>
-               <button><img src="./img/iconredo.PNG" alt="redo" style="height:30px;width:20px"></button>
-               
-              </div>
-            <input type="text" id="teamplatename" name="teloaderamplatename" readonly style="height: 30px;background-color: #f6f6f6;margin-top: 7px; border: none;margin-right: 16px;font-weight: bold;margin-left: 60px" data-toggle="tooltip" data-placement="bottom" title="Name">
-            <button class="button btn control-button btn-success btn-primary" id="saveButton" data-toggle="tooltip" data-placement="bottom" title="Save" style="margin-left: 60px">Save</button>
-            
-            <div id="col-4">
-            <button id="codeEditor" class="unstyled-button btn" data-toggle="tooltip" data-placement="bottom" title="Code Editor" style="border-radius: 50%;margin-right: 16px"><img src="./img/iconsource.png" alt="codeeditor" style="height:40px;width:30px"></button> 
-            
-            <button id="previewButton" class="unstyled-button btn" data-toggle="tooltip" data-placement="bottom" title="Preview" style="border-radius: 50%;margin-right: 16px"><img src="./img/icnprevw.PNG" alt="preview" style="height:40px;width:30px"></button>
-           
-            
-            <button id="btnemailsend" class="unstyled-button btn" data-toggle="tooltip" data-placement="bottom" title="Send Email" style="border-radius: 50%;margin-right: 16px"><img src="./img/iconemailsend.png" alt="preview" style="height:40px;width:30px"></button>
-            <!--input type='button' id='btnopen' value='Launch Editor' style="color: #28a23c;height: 32px;padding-left: 16px;padding-right: 16px;" /-->
-            </div>
-            
-          
+         <div id="externalSystemContainer" style="width: 100%;">
+        <div id="col-logo">
+        <img src="./img/imglogo.PNG" alt="logo" style="height:40px;width:40%">
         </div>
+          
+        <div id="col-1">
+        <button id="back" class="unstyled-button btn tooltip" style="border-radius: 50%;" onclick="window.close();"><span class="tooltiptext">Leave</span><img src="./img/iconleft.png" alt="back" style="height:40px;width:30px"></button>
+         </div>
+        
+         <div class="btn-group">
+            
+           <button><img src="./img/iconundo.png" alt="undo" style="height:30px;width:20px"></button>
+           <button><img src="./img/iconredo.png" alt="redo" style="height:30px;width:20px"></button>
+           
+          </div>
+          
+        <input type="text" id="teamplatename" name="teloaderamplatename" readonly style="height: 30px;background-color: #f6f6f6;margin-top: 7px; border: none;margin-right: 16px;font-weight: bold;margin-left: 60px">
+        <button class="button btn control-button btn-success btn-primary tooltip " id="saveButton" style="margin-left: 60px"><span class="tooltiptext">Save</span>Save</button>
+        
+        <div id="col-4">
+        <button id="codeEditor" class="unstyled-button btn tooltip"  style="border-radius: 50%;margin-right: 16px"><span class="tooltiptext">Code Editor</span><img src="./img/iconsource.png" alt="codeeditor" style="height:40px;width:30px"></button> 
+        
+        <button id="previewButton" class="unstyled-button btn tooltip" style="border-radius: 50%;margin-right: 16px"><span class="tooltiptext">Preview</span><img src="./img/icnprevw.PNG" alt="preview" style="height:40px;width:30px"></button>
+        
+        <button id="btnemailsend" class="unstyled-button btn tooltip" style="border-radius: 50%;margin-right: 16px"><span class="tooltiptext">Send Email</span><img src="./img/iconemailsend.png" alt="send email" style="height:40px;width:30px"></button>
+        
+        </div>
+        
+        
+    </div>
+        
     </div>
     <div class="row">
         <div>
