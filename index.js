@@ -10,7 +10,7 @@ var templatename=usercontext.TemplateName;
 
  $(document).ready(function()
     {     
-        document.getElementById("teamplatename").value = usercontext.TemplateName;
+        document.getElementById("teamplatename").value = "";
     });
 var EMAILInitialization = {
 
