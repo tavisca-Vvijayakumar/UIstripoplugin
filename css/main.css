@@ -1,7 +1,7 @@
 #externalSystemContainer {
     background-color: #f6f6f6;
     color:#555555;
-    height: 64px;
+    height: 70px;
     border-bottom: 1px solid darkgrey;
     padding-top: 5px;
     
@@ -115,7 +115,7 @@ Css added as part of Tavem-825
     margin-top: 5px;
     color: #fff;
     background-color:#32cb4b;
-    border-color:#2db743;
+    border: #32cb4b;
 }
 .btn-group button { 
     margin-top: 7px;
@@ -137,15 +137,48 @@ Css added as part of Tavem-825
     border-top-left-radius: 5;
 }
   .btn-group button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
+    border-right: none;
   }
   
   .esd-extension-dnd-structure
   {
-    background-color: skyblue !important;
+    background-color:#00A0D1 !important;
     
   }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 0; 
+    position: absolute;
+    z-index: 1;  
+   top: 100%;
+  left: 50%;
+  margin-left: -60px; 
+  }
  
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 @keyframes spin {
     from{
         transform: rotate(0deg);
