@@ -282,6 +282,7 @@ document.querySelector("#saveButton").addEventListener('click', function (data) 
     })
 });
 async function creplace(html) {
+  const loader = document.querySelector('#overlay');
    var entryUID = "";
     var contenttypeUID = "";
     var StringHTML = html;
