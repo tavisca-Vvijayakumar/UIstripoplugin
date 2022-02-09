@@ -11,6 +11,7 @@ var userContextConfiguration = {
         var decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8)); 
         console.log("from usercontext",decryptedData); // [{id: 1}, {id: 2}]
         usercontext = decryptedData;
+        document.getElementById("teamplatename").value = usercontext.TemplateName;
         return "Ok";
     }
 }
