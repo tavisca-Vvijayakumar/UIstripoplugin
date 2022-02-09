@@ -27,7 +27,7 @@ var externalPreviewPopup;
                             <div class="preview-col-sm-8">\
                                 <div class="esdev-desktop-device">\
                                     <div class="esdev-email-window-panel">\
-                                    <button id="previewback" type="button" class="unstyled-button btn close" data-toggle="tooltip" data-placement="bottom" title="Back to editor" style="border-radius: 50%;"><img src="./img/iconleft.png" alt="back" style="height:40px;width:30px"></button>\
+                                    <button id="previewback" type="button" class="unstyled-button btn close tooltip" style="border-radius: 50%;"><span class="tooltiptext">Back to Editor</span><img src="./img/iconleft.png" alt="back" style="height:40px;width:30px"></button>\
                                         <div class="esdev-email-subject" style="min-height: 20px"></div>\
                                     </div>\
                                     <div class="esdev-desktop-device-screen">\
