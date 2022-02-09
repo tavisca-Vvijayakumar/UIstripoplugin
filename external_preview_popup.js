@@ -52,6 +52,10 @@ var externalPreviewPopup;
 
         externalPreviewPopup = document.getElementById('externalPreviewPopup');
         externalPreviewPopup.querySelector('.close').addEventListener('click', this.close);
+          $('#previewback').on('click', function(){
+            console.log(usercontext.TemplateName);
+            externalPreviewPopup.style.visibility = 'hidden';
+        });
     },
 
      openPreviewPopup : function(html) {
