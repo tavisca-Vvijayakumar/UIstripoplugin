@@ -7,10 +7,9 @@ import { ExternalPreviewPopup } from "./external_preview_popup.js"
 import translation from './js/translation.js';
 var isSaved = false;
 var templatename=usercontext.TemplateName;
-$(document).ready(function()
-    {     
-        document.getElementById("teamplatename").value = usercontext.TemplateName;
-    });
+
+ var s = document.getElementById("teamplatename");
+            s.value =  usercontext.TemplateName;
 var EMAILInitialization = {
 
     /*
